@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import LikeCounter from "./component/Likecounter"
+import LikeButton from "./component/LikeButton"
+import AwesomeAnimals from "./component/AwesomeAnimals"
+import ArticleList from "./component/ArticleList"
 import './App.css';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+        <h2>Exc01: Plus, Minus, Reset</h2>
+        <LikeCounter/>
+        <h2>Exc02: Like/Unlike</h2>
+        <LikeButton/>
+        <h2>Exc03: Map Awesome Animals</h2>
+        <AwesomeAnimals/>
+        <h2>Exc04: Article List</h2>
+        <ArticleList/>
+
+      </main>
     </div>
   );
 }
