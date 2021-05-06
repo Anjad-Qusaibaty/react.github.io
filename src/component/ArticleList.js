@@ -1,7 +1,6 @@
 import ArticleCard from "./ArticleCard"
 
 import { useState } from "react";
-import reactDom from "react-dom";
 
 
 let buttonStyle={color:'red'};
@@ -21,7 +20,7 @@ export default function ArticleList() {
     },
     {
       id: 3,
-      title: "On placeholder image URLs",
+      title: "One placeholder image URLs",
       body:
         "So yeah, you won't be able to look these images up. They're placeholders"
     }

@@ -16,6 +16,12 @@ export default function LikeButton() {
             catStyle = {};
         }
     }
+    // console.log("A render!");
+
+    // useEffect(() => {
+    //   console.log("The useEffect action!");
+    // }, []);
+
   return (
     <div>
     <p>Cats cats cats.. loads of cats!</p>

@@ -8,28 +8,20 @@ const animals = [
     "Velociraptor"
   ];
 
-  const listStyle = 
-  {"list-style":'none'};
+  const styleofList = 
+  {listStyle:'none'};
 
 
 
 export default function AwesomeAnimals() {
 
   return (
-    <div>
-{
-    animals.map((animal,index)=>{
-        return(
-
-        <ul  style={listStyle} >
-            <li key={index} >Awesomness level {index+1} : {animal}</li>
-        </ul>
-
-        )
-    }
-
-    )
-}
-    </div>
-  )
-}
+    <ul style={styleofList}>
+      {
+        animals.map((animal,index)=>{
+          return(<li key={index}>Awesomness level {index+1} : {animal}</li>)
+        })
+      }
+    </ul>
+  );
+  }
